@@ -1,0 +1,24 @@
+{
+  "manifest_version": 2,
+
+  "name": "Mol Bhav",
+  "version": "1.0",
+  "description": "compare price from top sites",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["popup.js"],
+    "persistent": false
+  },
+  
+  "permissions": [ "https://secure.flickr.com/",
+     "tabs",
+     "http://www.flipkart.com/",
+     "http://www.amazon.in/",
+     "http://www.snapdeal.com/",
+     "https://closet-dev.gwynniebee.com/"]
+}

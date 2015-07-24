@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Getting Started Extension's Popup</title>
+    <link rel="stylesheet" type="text/css" href="./main.css" />
+
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: http://developer.chrome.com/extensions/contentSecurityPolicy.html
+     -->
+    <script src="./jquery.js"></script>
+
+    <script src="popup.js"></script>
+
+  </head>
+    <body>
+        <div id="heading">
+            Mol Bhav
+        </div>
+        <div id="search-div">
+            <form class="form-wrapper">
+                <input type="text" id="search-box" placeholder="Search product.." />
+                <input id="submit-btn" type="button" value="GO"/> 
+            </form>
+        </div>
+        <div id="info-div" style="display:none">
+            <div id="flipkart-main">
+                <div id="flipkart-logo" class="logo">
+                    <img src="./images/flipkart_logo.jpeg" />
+                </div>
+                <div id="flipkart-div" class="site-content">
+                    <img src="./images/loading.gif" />
+                </div>  
+            </div>
+            <div id="amazon-main">
+                <div id="amazon-logo" class="logo">
+                    <img src="./images/amazon.jpg" />
+                </div>
+                <div id="amazon-div" class="site-content">
+                    <img src="./images/loading.gif" />
+                </div>  
+            </div>
+            <div id="sanpdeal-main">
+                <div id="sanpdeal-logo" class="logo">
+                    <img src="./images/snapdeal_logo.png" />
+                </div>
+                <div id="snapdeal-div" class="site-content">
+                    <img src="./images/loading.gif" />
+                </div>  
+            </div>
+        </div>
+    </body>
+</html>
+
